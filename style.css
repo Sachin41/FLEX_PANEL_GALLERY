@@ -1,0 +1,106 @@
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .panels {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        .panel {
+            min-height: 100vh;
+            background-size: cover;
+            flex: 20%;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+                background 0.2s;
+        }
+
+        .panel1 {
+            background-image: url("images/snowed-mountain.jpg");
+        }
+
+        .panel2 {
+            background-image: url("images/green-tree.jpg");
+        }
+
+        .panel3 {
+            background-image: url("images/mountain-top.png");
+        }
+
+        .panel4 {
+            background-image: url("images/fox.jpg");
+        }
+
+        .panel5 {
+            background-image: url("images/cloudy.jpg");
+        }
+
+        .panel p {
+            margin: 0;
+            text-transform: uppercase;
+            font-family: 'Amatic SC', cursive;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+            font-size: 2em;
+            transition: transform 0.5s;
+
+        }
+
+        .panel p:first-child {
+            transform: translateY(-150px);
+        }
+
+        .panel.open-active p:first-child {
+            transform: translateY(0);
+        }
+
+        .panel p:last-child {
+            transform: translateY(150px);
+        }
+
+        .panel.open-active p:last-child {
+            transform: translateY(0);
+        }
+
+        .panel p:nth-child(2) {
+            font-size: 3em;
+            transition: font-size 0.3s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+        }
+
+        .panel.open p:nth-child(2) {
+            font-size: 4em;
+        }
+
+        .panel.open {
+            flex: 30%;
+            font-size: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .panel p:first-child {
+                transform: translateY(-400px);
+            }
+
+            .panel p:last-child {
+                transform: translateY(400px);
+            }
+
+            .panel p:nth-child(2) {
+                font-size: 2em;
+            }
+
+            .panel.open {
+                font-size: 15px;
+            }
+
+        }
