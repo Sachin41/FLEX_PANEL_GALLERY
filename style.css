@@ -27,23 +27,23 @@
         }
 
         .panel1 {
-            background-image: url("images/snowed-mountain.jpg");
+            background-image: url("Images/snowed-mountain.jpg");
         }
 
         .panel2 {
-            background-image: url("images/green-tree.jpg");
+            background-image: url("Images/green-tree.jpg");
         }
 
         .panel3 {
-            background-image: url("images/mountain-top.png");
+            background-image: url("Images/mountain-top.png");
         }
 
         .panel4 {
-            background-image: url("images/fox.jpg");
+            background-image: url("Images/fox.jpg");
         }
 
         .panel5 {
-            background-image: url("images/cloudy.jpg");
+            background-image: url("Images/cloudy.jpg");
         }
 
         .panel p {
